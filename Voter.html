@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Application Form</title>
+    <style>
+        .tb
+        {
+            font-style: oblique;
+            background-origin: padding-box;
+            color:black;
+        }
+    </style>
+</head>
+
+<body class="tb" style="border: 10px ; padding: 25px; margin: 25px; height: 5cm; width: 10cm; border-style:double; color: brown;"> 
+    <h3 align="center">Voter Information</h3>
+    <form>
+        <table align="center">
+            <tr>
+                <td align="right">Name Of the Voter:</td>
+                <td><input type="text" id="Voter_name" required /></td>
+            </tr>
+            <tr>
+                <td align="right">Age:</td>
+                <td><input type="age" id="Voter_age" required /></td>
+            </tr>
+            <tr>
+                <td align="right">Gender:</td>
+                <td>
+                    <select name="Gender" id="Gender" class="tb">
+                        <option value="Gender">Select Your Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Check Your Eligibilty:</td>
+                <td><input type="button" value="Submit" onclick="fun()" class="tb"/></td>
+            </tr>
+        </table>
+
+    </form>
+    <script src="Eligiblity.js"></script>
+
+</body>
+
+</html>
